@@ -1,44 +1,41 @@
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/datatables/dataTables.bootstrap.css">
-<link rel="stylesheet" href="assets/datatables/jquery.dataTables.css">
-<link rel="stylesheet" href="assets/datepicker/datepicker3.css">
-<link rel="stylesheet" href="assets/datepicker/bootstrap-datepicker.js">
-
-
-
-<script src="assets/jQuery/jq.min.js"></script>
-<script src="assets/datatables/dataTables.bootstrap.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-
-<script type="text/javascript">
-  
-</script>
-<div class="container">
-  <br>
-  <div>
-    <table class="table" id="table">
-      <thead>
-        <tr>
-          <td>NO</td>
-          <td>Nama</td>
-          <td>MAC</td>
-          <td>Info</td>
-        </tr>
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-  </div>
-</div>
-<script src="assets/datatables/jquery.dataTables.js"></script>
-<script>
-  
-$(document).ready(function() {
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="assets/datatables/jquery.dataTables.css">
+    <link rel="stylesheet" href="assets/datepicker/datepicker3.css">
+    <link rel="stylesheet" href="assets/datepicker/bootstrap-datepicker.js">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div>
+        <table class="table" id="table">
+          <thead>
+            <tr>
+              <td>NO</td>
+              <td>Nama</td>
+              <td>MAC</td>
+              <td>Info</td>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="assets/datatables/jquery.dataTables.js"></script>
+  <script src="assets/jQuery/jq.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function() {
     $('#table').DataTable( {
-        "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
-        "ajax": 'data.json'
+    "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
+    "ajax": 'data.json'
     } );
-} );
-</script>
+  } );
+  </script>
+</html>
